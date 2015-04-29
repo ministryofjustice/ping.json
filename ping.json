@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "monitoring endpoint",
+    "description": "Monitoring endpoint for 2nd line support",
+    "type": "object",
+    "properties": {
+        "version_number": {
+            "description": "Docker tag",
+            "type": "string"
+        },
+        "build_date": {
+            "description": "Build date",
+            "type": "date-time"
+        },
+        "commit_id": {
+            "description": "Git SHA of the last commit",
+            "type": "string"
+        },
+        "build_tag": {
+            "description": "Jenkins built tag",
+            "type": "string"
+        }
+    },
+    "required": ["version_number", "build_date", "commit_id", "build_tag"]
+}
